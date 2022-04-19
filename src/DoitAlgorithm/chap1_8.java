@@ -15,7 +15,7 @@ public class chap1_8 {
 		
 		int sum = 0;
 		
-		sum = (num + 1) * (num / 2) + (num % 2 == 1 ? (num + 1) / 2 : 0);
+		sum = (1 + num) * (num / 2) + (num % 2 == 1 ? (num + 1) / 2 : 0);
 
 		System.out.println("1부터 "+num+"까지의 합: "+sum);
 	}
