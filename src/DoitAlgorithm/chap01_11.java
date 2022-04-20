@@ -28,6 +28,7 @@ public class chap01_11 {
 		} while(num != 0);
 		
 		System.out.println(origin + " 은/는 " + i + "자리입니다.");
+		
 	}
 
 }

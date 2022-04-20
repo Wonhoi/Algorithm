@@ -26,6 +26,5 @@ public class chap01_17 {
 		System.out.print("피라미드의 높이: "); int num = scan.nextInt();
 		System.out.println(num + "단의 피라미드를 출력합니다.");
 		npira(num);
-		
 	}
 }

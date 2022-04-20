@@ -21,6 +21,7 @@ public class chap01_12 {
 				System.out.printf("%3d", i * j);
 			}
 			System.out.println();		
+			
 		}
 	}
 }

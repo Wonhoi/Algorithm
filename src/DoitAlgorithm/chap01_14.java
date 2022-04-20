@@ -16,6 +16,7 @@ public class chap01_14 {
 			for(int j = 1; j <= num; j++)
 				System.out.print("*");
 			System.out.println();
+			
 		}
 	}
 }
