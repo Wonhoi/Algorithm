@@ -53,5 +53,6 @@ public class chap02_05 {
 			System.out.print(b[i] + " ");
 		System.out.println();
 		
+		
 	}
 }
