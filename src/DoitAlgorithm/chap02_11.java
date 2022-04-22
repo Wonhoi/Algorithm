@@ -70,7 +70,6 @@ class YMD {
 		}
 		return temp;
 	}
-	
 }
 
 public class chap02_11 {
@@ -91,8 +90,5 @@ public class chap02_11 {
 		
 		YMD d1 = date.after(n);
 		System.out.printf("%d일 후의 날짜는 %d년 %d월 %d일입니다.\n", n, d1.y, d1.m, d1.d);
-		
-		
-		
 	}
 }
