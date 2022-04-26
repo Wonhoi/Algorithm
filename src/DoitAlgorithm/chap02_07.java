@@ -15,6 +15,7 @@ import java.util.*;
 public class chap02_07 {
 	//x : 정수, r : 진수, d : 자릿수
 	static int cardConv(int x, int r, char[] d) {
+		//---x---//
 		int n = ((Integer)x).toString().length();
 		int digits = 0;
 		String dchar = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -26,20 +27,20 @@ public class chap02_07 {
 		 * 세 칸을 확보하고 오른쪽부터 10을 입력, 두 칸을 확보하고 오른쪽부터 20을 입력하여 10, 20이 될 것입니다.
 		 * %%는 format에서 '%'문자를 의미합니다. format에서 '%'라는 문자를 사용하고 싶으면 %% 두번 쓰면 됩니다.
 		 * String.format("%%2d, %%%dd, %%d", n)
-		 * %%를 전부 치환하면 %2d, %%dd, %d가 됩니다. 여기서 가운데 %d자리에 n값을 대입합니다.
+		 * %%를 전부 치환하면 %2d, %%dd, %d가 됩니다. 여기서 가운데 %d자리에 n(=2)값을 대입합니다.
 		 * 그러면 %2d, %2d, %d가 됩니다. 이것을 문자열로 반환합니다.
 		 * String.format("%%2d, %%%dd, %%d", n) <<==>> "%2d, %2d, %d" (String 형식이 됨)
 		 */
 		
 		// System.out.printf("%2d | %nd",r, x);
-		System.out.printf(String.format("%%2d | %%%dd\n", n), r, x); 
+		System.out.printf(String.format("%%2d | %%%dd\n", n), r, x);
 		do {
 			System.out.printf("   +");
 			for(int i = 0; i < n+2; i++)
 				System.out.print("-");
 			System.out.println();
 			
-			if(x/r !=0)
+			if(x / r !=0)
 				System.out.printf(String.format("%%2d | %%%dd    ... %%d\n", n), r, x / r, x % r);
 				//System.out.printf("%d", r + "|    %d … %d",x/r, x%r);
 			else
@@ -50,7 +51,7 @@ public class chap02_07 {
 			x /= r;
 		} while (x != 0);
 		
-		for(int i =0; i < digits/2; i++) {
+		for(int i = 0; i < digits/2; i++) {
 			char temp = d[i];
 			d[i] = d[digits - i - 1];
 			d[digits - i - 1] = temp;
